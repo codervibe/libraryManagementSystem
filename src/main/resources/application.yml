@@ -1,0 +1,17 @@
+mybatis:
+    config-locations: classpath:mybatis/mybatis-config.xml
+    mapper-locations: classpath:mapper/*.xml
+    type-aliases-package: com.codervibe.libraryManagementSystem.domain
+spring:
+    datasource:
+        driverClassName: com.mysql.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/pblog?useUnicode=true&characterEncoding=utf-8&useSSL=true
+        username: root
+        password: root
+    mvc:
+        view:
+            prefix: classpath:/templates/
+            suffix: .html
+    resources:
+        chain:
+            cache: false
